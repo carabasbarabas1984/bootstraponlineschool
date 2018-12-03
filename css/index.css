@@ -1,10 +1,9 @@
 
-body{
-    background-color:#CFD0DB;
-}
-.p-footer{
-    color:white;
-}
+
+
 .footer{
     max-width: 100%;
+}
+.text-center{
+    padding-top: 2px;
 }
