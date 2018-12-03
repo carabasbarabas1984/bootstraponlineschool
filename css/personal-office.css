@@ -1,0 +1,17 @@
+.registforms{
+    height: 310px;
+    width: 600px;
+    border-color: #F3F3F3 #BBB #BBB #F3F3F3;
+    background-color: #EEE;
+    /*border: 1px solid;*/
+    margin:  auto;
+    border : 5px auto;
+    padding: 20px 20px;
+    
+}
+.headerImg{
+    z-index: 1;
+}
+body{
+    background-color: #CFD4FE;
+}
