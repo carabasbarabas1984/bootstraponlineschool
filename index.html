@@ -57,90 +57,12 @@
         </nav>
       </div>
       <div class="container">
-        <div class="product-list row">
-
-          <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img class="card-img-top" src="img/новина1.jpg" alt="First News">
-            <div class="card-body">
-              <h5 class="card-title">МОН затвердить зміни до рамки кваліфікацій</h5>
-              <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-primary">Читати</a>
-              </div>
-            </div>
-          </article>
-
-
-          <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img class="card-img-top" src="img/новина2.jpg" alt="First News">
-            <div class="card-body">
-              <h5 class="card-title">Розгадуємо метаграми, ребуси та анаграми</h5>
-              <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-primary">Читати</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img class="card-img-top" src="img/новина3.jpg" alt="First News">
-            <div class="card-body">
-              <h5 class="card-title">Проведіть урок інформатики разом з усім світом</h5>
-              <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-primary">Читати</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img class="card-img-top" src="img/новина4.jpg" alt="First News">
-            <div class="card-body">
-              <h5 class="card-title">Стартував зимовий набір до польських університетів</h5>
-              <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-primary">Читати</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img class="card-img-top" src="img/новина5.jpg" alt="First News">
-            <div class="card-body">
-              <h5 class="card-title">В Україні проведуть тренінг з управління школою</h5>
-              <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-primary">Читати</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img class="card-img-top" src="img/новина6.jpg" alt="First News">
-            <div class="card-body">
-              <h5 class="card-title">МОН затвердить зміни до рамки кваліфікацій</h5>
-              <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-primary">Читати</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img class="card-img-top" src="img/новина7.jpg" alt="First News">
-            <div class="card-body">
-              <h5 class="card-title">МОН затвердить зміни до рамки кваліфікацій </h5>
-              <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-primary">Читати</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img class="card-img-top" src="img/новина8.jpg" alt="First News">
-            <div class="card-body">
-              <h5 class="card-title">МОН: школа має знати про причини відсутності дитини</h5>
-              <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-primary">Читати</a>
-              </div>
-            </div>
-          </article>
-        </div>
       </div>
+      <section>
+            <div class="row products-container">
+               <!--Products are dynamically generated here-->
+            </div>
+        </section>
     </main>
     <footer class="d-flex flex-column bd-highlight mb-3 bg-dark">
       <div class="d-flex justify-content-center">
@@ -158,13 +80,36 @@
         <p class="p-footer">Повідомити про проблеми на сайті : <a href="" #>admin@onlineschool.com.ua</a></p>
       </div>
     </footer>
+    <!-- Modal Product Info -->
+     <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title " id="productInfoLabel">Новини</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <img class="card-img-top" src="" alt="">
+              <h4 class="card-title"></h4>
+              <p class="card-text"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+  <script defer src="js/product-list.js"></script>    
+  <script defer src="js/index.js"></script>
 </body>
 
 </html>
